@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kris Eversole | Full Stack Engineer, Creative Problem Solver</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/9d231271cd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="navbar" id="navbar">
+            <button class="nav-button" id="about-button">About</button>
+            <button class="nav-button" id="portfolio-button">Portfolio</button>
+            <button class="nav-button" id="contact-button">Contact</button>
+        </div>
+
+        <div class="landing-wrapper" id="landing">
+            <div class="landing-text-wrapper">
+                <h1>Hi, I'm Kris Eversole</h1>
+                <h2>and I code things</h2>
+                <div class="social-media-links"></div>
+                    <i class="fa-brands fa-linkedin" id="linked-in"></i>
+                    <i class="fa-brands fa-github" id="github"></i>
+                    <i class="fa-brands fa-twitter" id="twitter"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="about-wrapper" id="about">
+                <h2 class="sub-title" id="about-title">About</h2>
+                <div class="about-sections">
+                    <p>My name is Kris Eversole and I am a zookeeper and animal care professional turned programmer. How does that work? Hire me and find out!</p>
+                    <img id="self-photo" src="images/charlie.jpg">
+                </div>
+            </div>
+
+            <div class="portfolio-wrapper" id="portfolio">
+                <h2 class="sub-title" id="portfolio-title">Portfolio</h2>
+                <div class="portfolio-row">
+                    <div class="portfolio-item">
+                        IMAGE GOES HERE
+                        <h3 class="item-name">Narcissist Translator</h3>
+                        <p>This translates stupid narcissist bullshit. Here's problems I encountered with it and here's how I solved them. Look at what a go-getter I am, throwing themes on things that don't need them.</p>
+                        <a href="#">See It In Action</a>
+                        <a href="#">GitHub</a>
+                    </div>
+
+                    <div class="portfolio-item">
+                        IMAGE GOES HERE
+                        <h3 class="item-name">Trapped in a Cabin With Lord Byron</h3>
+                        <p>I coded a silly thing in Ruby. This was done entirely for fun and my own entertainment. See, I can work with backend stuff and different languages! And I have a sense of humor and can hit you with literary jokes.</p>
+                        <a href="#">See It In Action</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-wrapper" id="contact">
+                <h2 class="sub-title" id=contact-title">Contact Me</h2>
+                <h2>Want to hire me for a project, ask some questions about my experience, or just want to have your inbox overloaded with a hundred pictures of my cat? Send me a message and I'll get back to you as quickly as possible!</h2>
+                <form class="contact-form" action="/my-handlinpageg-form-" method="post">
+                    <div class="form-row">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name"/>
+
+                        <label for="mail">Email:</label>
+                        <input type="email" id="email" name="user_email"/>
+                    </div>
+                    <div class="form-row">
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </div>
+
+                        <button type="submit">Send your message</button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="footer">Created by Kris Eversole</div>
+    </div>
+</body>
+<script src="index.js" defer></script>
+</html>
