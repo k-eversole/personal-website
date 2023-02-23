@@ -24,15 +24,6 @@ body {
     width: 100vw;
 }
 
-
-.landing-wrapper {
-    background: linear-gradient(black, transparent, black), url("images/floral.jpg") no-repeat center;
-    background-position: center;
-    background-size: cover;
-    z-index: 2;
-    height: 100vh;
-}
-
 .navbar {
     position: fixed;
     display: flex;
@@ -44,7 +35,7 @@ body {
     z-index: 3;
 }
 
-.nav-button {
+button {
     font-size: 1.5rem;
     padding: 10px;
     margin: 15px;
@@ -60,11 +51,12 @@ body {
     filter: drop-shadow(2px 2px 3px #000000);
 }
 
-.wrapper {
-    position: relative;
-    margin-right: 300px;
-    left: 300px;
-    width: calc(100% - 300px);
+.landing-wrapper {
+    background: linear-gradient(black, transparent, black), url("images/floral.jpg") no-repeat center;
+    background-position: center;
+    background-size: cover;
+    z-index: 2;
+    height: 100vh;
 }
 
 .landing-text-wrapper {
@@ -87,21 +79,36 @@ body {
     color: white;
 }
 
-.about-wrapper {
+.light-wrapper {
+    position: relative;
     min-height: 100vh;
-    padding: 100px 0 100px 0;
-    width: 80%;
-    margin: auto;
+    width: 100%;
     color: #021f1d;
 }
 
+.dark-wrapper {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #0A3F37;
+}
+
+.content-wrapper {
+    position: relative;
+    min-height: 100vh;
+    margin-right: 300px;
+    padding: 5vh 5vw 5vh 5vw;
+    left: 300px;
+    width: calc(90vw - 300px);
+}
+
 .about-wrapper p {
-        color: #021f1d;
+    color: #021f1d;
 }
 
 .about-sections {
     display: flex;
-    gap: 25px;
+    gap: 100px;
 }
 
 ul {
@@ -111,11 +118,6 @@ ul {
 
 li {
     padding-left: 20px;
-}
-
-#self-photo {
-    width: auto;
-    height: 200px;
 }
 
 .sub-title {
@@ -129,46 +131,21 @@ h3 {
 }
 
 p {
-    color: white;
-}
-
-.green-background {
-    background-color: #021f1d;
-    margin-left: -300px;
-    height: 100vh;
-}
-
-.portfolio-wrapper-large {
-    position: relative;
-    left: 300px;
-    margin-right: 300px;
-    height: 100vh;
-    padding: 100px 0 100px 0;
-}
-
-.portfolio-wrapper-small {
-    margin: auto;
-    width: 80%;
 }
 
 .portfolio-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-
+    justify-content: space-evenly;
+    gap: 20px;
 }
 
 .portfolio-item {
-    width: 45%;
+    max-width: 500px;
 }
 
-.contact-wrapper {
-    height: 100vh;
-    padding: 100px 0 100px 0;
-    margin: auto;
-    width: 80%;
-    color: #021f1d;
+.portfolio-display {
+    display: none;
 }
 
 #contact-description {
@@ -180,6 +157,8 @@ p {
 }
 
 .contact-form {
+    display: flex;
+    flex-direction: column;
 }
 
 .form-box {
@@ -222,6 +201,11 @@ label {
     width: 100%;
 }
 
+.submit-button {
+    color: #ffe283;
+    margin: auto;
+}
+
 .footer {
     position: relative;
     left: 0;
@@ -233,13 +217,16 @@ label {
     border-top: 2px solid #ffe283;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and ((max-width: 600px) or (orientation: portrait)) {
     .navbar {
+        position: sticky;
         flex-direction: row;
         justify-content: space-evenly;
         width: 100%;
-        height: 80px;
+        height: 50px;
         padding: 0 2vw 0 2vw;
+        background-color: #021f1d;
+        border-bottom: 2px solid #ffe283;
     }
 
     .nav-button {
@@ -248,7 +235,7 @@ label {
         font-size: 1rem;
     }
 
-    .wrapper {
+    .content-wrapper {
         width: 100%;
         left: 0px;
     }
@@ -267,7 +254,7 @@ label {
     }
 
     .about-sections {
-        flex-direction: column-reverse;
+       flex-direction: column;
     }
 
     #contact-description h3 {
@@ -283,4 +270,9 @@ label {
         width: 100%;
     }
 
+    .port-image {
+        max-width: 90%;
+        height: auto;
+    }
 }
+
