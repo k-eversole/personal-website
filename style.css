@@ -81,9 +81,13 @@ button {
 
 .light-wrapper {
     position: relative;
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     color: #021f1d;
+}
+
+.light-wrapper h2 {
+    color: #0A3F37;
 }
 
 .dark-wrapper {
@@ -102,13 +106,14 @@ button {
     width: calc(90vw - 300px);
 }
 
-.about-wrapper p {
-    color: #021f1d;
-}
-
 .about-sections {
     display: flex;
-    gap: 100px;
+    gap: 5vw;
+}
+
+.stock-filler {
+    width: 300px;
+    height: auto;
 }
 
 ul {
@@ -117,20 +122,30 @@ ul {
 }
 
 li {
-    padding-left: 20px;
+    text-align: right;
 }
 
-.sub-title {
-    font-size:32px;
+.section-title {
+    font-size: 3rem;
     text-align: center;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 75vh;
+}
+
+.sub-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
 }
 
 h3 {
-    font-size: 20px;
-}
-
-p {
+    font-size: 1.5rem;
 }
 
 .portfolio-row {
@@ -141,28 +156,37 @@ p {
 }
 
 .portfolio-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     max-width: 500px;
 }
 
-.portfolio-display {
-    display: none;
+.item-name {
+    color: white;
+}
+
+.portfolio-links {
+    display: flex;
+    justify-content: space-between;
 }
 
 #contact-description {
     width: 80%;
-    margin: auto;
     color: #021f1d;
     font-style: bold;
-    padding: 25px 0 50px 0;
+    padding-bottom: 5vh;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
+    width: 90%;
 }
 
 .form-box {
     margin-bottom: 25px;
+    flex-grow: 1;
 }
 
 .contact-form input {
@@ -257,10 +281,6 @@ label {
        flex-direction: column;
     }
 
-    #contact-description h3 {
-        font-size: 1rem;
-    }
-
     .portfolio-row {
         flex-direction: column;
         gap: 25px;
@@ -276,3 +296,12 @@ label {
     }
 }
 
+@media only screen and (max-width: 600px) {
+    #contact-description {
+        font-size: 0.9rem;
+    }
+
+    .contact-form {
+        height: 40vh;
+    }
+}
