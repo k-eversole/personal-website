@@ -33,22 +33,50 @@ body {
     height: 100%;
     width: 300px;
     z-index: 3;
+    gap: 1rem;
+}
+
+
+.button-wrap {
+    display: flex;
+    width: 175px;
+    padding: .25rem;
+    background: linear-gradient(
+        -225deg,
+        white 0%,
+        #ecdfbf, 29%,
+        #bdad89 67%,
+        #f1ebe5 100%
+        );
+    border-radius: 5px;
+    filter: drop-shadow(2px 2px 3px #000000);
 }
 
 button {
     font-size: 1.5rem;
-    padding: 10px;
-    margin: 15px;
-    color: inherit;
-    border: 2px solid #ffe283;
-    border-radius: 5px;
     width: 175px;
+    padding: 1rem;
+    color: inherit;
+    border-radius: 5px;
     background-color: #021f1d;
     background-repeat: no-repeat;
     cursor: pointer;
     overflow: hidden;
     outline: none;
-    filter: drop-shadow(2px 2px 3px #000000);
+    align-items: center;
+}
+
+.button-text {
+    background: linear-gradient(
+        -225deg,
+        white 0%,
+        #ecdfbf, 29%,
+        #dbc99f 67%,
+        #f1ebe5 100%
+        );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 .landing-wrapper {
@@ -66,17 +94,42 @@ button {
     line-height: 1.2;
     color: inherit;
     text-align: right;
-    text-shadow: 0 1px 0 black;
     font-size: 3rem;
+    color: #f1ebe5;
+    background-image: linear-gradient(
+    -225deg,
+    white 0%,
+    #ecdfbf, 29%,
+    #bdad89 67%,
+    #f1ebe5 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    z-index: 4;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 
 #landing h2 {
     font-size: 3rem;
 }
 
+
 .fa-brands {
     font-size: 25px;
     color: white;
+    cursor: pointer;
 }
 
 .light-wrapper {
@@ -99,7 +152,6 @@ button {
 
 .content-wrapper {
     position: relative;
-    min-height: 100vh;
     margin-right: 300px;
     padding: 5vh 5vw 5vh 5vw;
     left: 300px;
@@ -119,6 +171,9 @@ button {
 ul {
     list-style: none;
     font-style: italic;
+    text-align: center;
+    width: 40%;
+    margin: auto;
 }
 
 li {
@@ -174,8 +229,7 @@ h3 {
 #contact-description {
     width: 80%;
     color: #021f1d;
-    font-style: bold;
-    padding-bottom: 5vh;
+    padding-bottom: 10vh;
 }
 
 .contact-form {
@@ -185,7 +239,7 @@ h3 {
 }
 
 .form-box {
-    margin-bottom: 25px;
+    margin-bottom: 5vh;
     flex-grow: 1;
 }
 
@@ -237,6 +291,7 @@ label {
     height: 25px;
     width: 100%;
     text-align: center;
+    color: #ffe283;
     background-color: #021f1d;
     border-top: 2px solid #ffe283;
 }
@@ -247,16 +302,21 @@ label {
         flex-direction: row;
         justify-content: space-evenly;
         width: 100%;
-        height: 50px;
+        height: 3.5rem;
         padding: 0 2vw 0 2vw;
         background-color: #021f1d;
-        border-bottom: 2px solid #ffe283;
+    }
+
+    .button-wrap {
+        width: 5rem;
     }
 
     .nav-button {
-        padding: 5px;
-        margin: 10px;
+        display: flex;
+        justify-content: center;
+        width: 5rem;
         font-size: 1rem;
+        padding: 0.25rem 0.5rem 0.25rem 0.5rem;
     }
 
     .content-wrapper {
@@ -299,9 +359,6 @@ label {
 @media only screen and (max-width: 600px) {
     #contact-description {
         font-size: 0.9rem;
-    }
-
-    .contact-form {
-        height: 40vh;
+        padding-bottom: 5vh;
     }
 }
