@@ -45,11 +45,16 @@ body {
         -225deg,
         white 0%,
         #ecdfbf, 29%,
-        #bdad89 67%,
+        #6a592f 67%,
         #f1ebe5 100%
         );
     border-radius: 5px;
-    filter: drop-shadow(2px 2px 3px #000000);
+    border: 1px solid #6a592f;
+    filter:
+        drop-shadow(1px 1px 1px black)
+        drop-shadow(-1px -1px 1px black)
+        drop-shadow(1px -1px 1px black)
+        drop-shadow(-1px 1px 1px black);
 }
 
 button {
@@ -64,6 +69,7 @@ button {
     overflow: hidden;
     outline: none;
     align-items: center;
+
 }
 
 .button-text {
@@ -76,7 +82,6 @@ button {
         );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
 .landing-wrapper {
@@ -161,19 +166,17 @@ button {
 .about-sections {
     display: flex;
     gap: 5vw;
+
 }
 
 .stock-filler {
-    width: 300px;
-    height: auto;
+    width: auto;
+    height: 70vh;
 }
 
 ul {
     list-style: none;
     font-style: italic;
-    text-align: center;
-    width: 40%;
-    margin: auto;
 }
 
 li {
