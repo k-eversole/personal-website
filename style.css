@@ -10,13 +10,19 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    font-weight: bold;
+    color: #dbc99f;
+    text-decoration: none;
+  }
+
 body {
     font-weight: 300;
     font-size: 1.05rem;
     line-height: 1.6;
     font-family: 'Open Sans', sans-serif;
     background-color:#ffffff;
-    color:#ffe283;
+    color: #ecdfbf;
 }
 
 .container {
@@ -35,7 +41,6 @@ body {
     z-index: 3;
     gap: 1rem;
 }
-
 
 .button-wrap {
     display: flex;
@@ -59,6 +64,7 @@ body {
 
 button {
     font-size: 1.5rem;
+    font-weight: bold;
     width: 175px;
     padding: 0.5rem;
     color: inherit;
@@ -163,30 +169,20 @@ button {
     width: calc(90vw - 300px);
 }
 
-.about-sections {
-    display: flex;
-    gap: 5vw;
-
-}
-
-.stock-filler {
-    width: auto;
-    height: 70vh;
-}
-
-ul {
-    list-style: none;
-    font-style: italic;
-}
-
-li {
-    text-align: right;
-}
-
 .section-title {
     font-size: 3rem;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 5rem;
+}
+
+.section-title::before {
+	content: '─';
+	margin-right: 0.6em;
+}
+
+.section-title::after {
+	content: '─';
+	margin-left: 0.6em;
 }
 
 .section-content {
@@ -206,6 +202,30 @@ h3 {
     font-size: 1.5rem;
 }
 
+.about-sections {
+    display: flex;
+    gap: 5vw;
+}
+
+.stock-filler {
+    width: auto;
+    height: 70vh;
+}
+
+.skill-div {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+    font-style: italic;
+}
+
+li {
+    text-align: right;
+}
+
 .portfolio-row {
     display: flex;
     flex-wrap: wrap;
@@ -222,11 +242,25 @@ h3 {
 
 .item-name {
     color: white;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.port-image {
+    width: 90%;
+    margin: auto;
+}
+
+.link-div {
+
 }
 
 .portfolio-links {
+    margin-top: 0.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    border-top: 2px solid #021f1d;
+    border-bottom:2px solid #021f1d;
 }
 
 #contact-description {
@@ -288,7 +322,6 @@ label {
 }
 
 .footer {
-    position: relative;
     left: 0;
     bottom: 0;
     height: 25px;
