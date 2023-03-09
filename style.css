@@ -37,7 +37,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 300px;
+    width: 20rem;
     z-index: 3;
     gap: 1rem;
 }
@@ -50,7 +50,7 @@ body {
         -225deg,
         white 0%,
         #ecdfbf, 29%,
-        #6a592f 67%,
+        #97824b 67%,
         #f1ebe5 100%
         );
     border-radius: 5px;
@@ -111,7 +111,7 @@ button {
     -225deg,
     white 0%,
     #ecdfbf, 29%,
-    #bdad89 67%,
+    #d8c69a 67%,
     #f1ebe5 100%
     );
     background-size: auto auto;
@@ -158,15 +158,15 @@ button {
     position: relative;
     min-height: 100vh;
     width: 100%;
-    background-color: #0A3F37;
+    background: radial-gradient(circle at top, #0A3F37, #031613)
 }
 
 .content-wrapper {
     position: relative;
-    margin-right: 300px;
-    padding: 5vh 5vw 5vh 5vw;
-    left: 300px;
-    width: calc(90vw - 300px);
+    margin-right: 20rem;
+    padding: 3rem 0 3rem 0;
+    left: 20rem;
+    width: 80%;
 }
 
 .section-title {
@@ -207,9 +207,21 @@ h3 {
     gap: 5vw;
 }
 
-.stock-filler {
+.vine-decoration {
     width: auto;
-    height: 70vh;
+    height: 30vh;
+}
+
+#vine-left {
+
+    border-bottom:#ffe283 solid 3px;
+    border-right:#ffe283 solid 3px;
+}
+
+#vine-right {
+
+    border-top:#ffe283 solid 3px;
+    border-left:#ffe283 solid 3px;
 }
 
 .skill-div {
@@ -224,20 +236,21 @@ ul {
 
 li {
     text-align: right;
+    padding-left: 1.5rem;
 }
 
 .portfolio-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 20px;
 }
 
 .portfolio-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 500px;
+    width: 30rem;
+    padding: 2rem;
 }
 
 .item-name {
@@ -283,13 +296,18 @@ li {
 .contact-form input {
     width: 100%;
     height: 50px;
+    font-size: 1.25rem;
     border: none;
     border-bottom: thick double #021f1d;
+    padding: 0.5rem;
   }
 
 .contact-form textarea {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25rem;
     width: 100%;
     height: 100px;
+    padding: 0.5rem;
     border: none;
     border-bottom: thick double #021f1d;
 }
@@ -322,9 +340,10 @@ label {
 }
 
 .footer {
+    position: relative;
     left: 0;
     bottom: 0;
-    height: 25px;
+    height: 5rem;
     width: 100%;
     text-align: center;
     color: #ffe283;
