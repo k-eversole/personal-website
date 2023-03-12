@@ -168,8 +168,11 @@ button {
 
 .content-wrapper {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-right: 20rem;
-    padding: 3rem 0 3rem 0;
+    padding: 3rem;
     left: 20rem;
     width: 80%;
 }
@@ -200,8 +203,9 @@ button {
 
 .sub-section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 5vw;
+    margin: auto;
 }
 
 h3 {
@@ -210,7 +214,9 @@ h3 {
 
 .about-sections {
     display: flex;
+    flex-direction: column;
     gap: 5vw;
+    width: 75%;
 }
 
 .vine-decoration {
@@ -219,13 +225,11 @@ h3 {
 }
 
 #vine-left {
-
     border-bottom:#ffe283 solid 3px;
     border-right:#ffe283 solid 3px;
 }
 
 #vine-right {
-
     border-top:#ffe283 solid 3px;
     border-left:#ffe283 solid 3px;
 }
@@ -285,6 +289,9 @@ li {
     border-bottom:2px solid #021f1d;
 }
 
+#contact-wrapper {
+    height: calc(100vh - 2rem)
+}
 
 #contact {
     padding-bottom: 0;
@@ -445,9 +452,6 @@ label {
         padding-bottom: 5vh;
     }
 
-    .section-title {
-        font-size: 2rem;
-    }
 }
 
 @media only screen and ((min-width: 400px) and (orientation: portrait)) {
