@@ -23,11 +23,12 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color:#ffffff;
     color: #ecdfbf;
+    overflow: scroll;
 }
 
 .container {
     min-height: 100%;
-    width: 100vw;
+    width: 100%;
 }
 
 .navbar {
@@ -44,7 +45,6 @@ body {
 
 .button-wrap {
     display: flex;
-    width: 175px;
     padding: .25rem;
     background: linear-gradient(
         -225deg,
@@ -53,13 +53,8 @@ body {
         #97824b 67%,
         #f1ebe5 100%
         );
-    border-radius: 5px;
-    border: 1px solid #6a592f;
-    filter:
-        drop-shadow(1px 1px 1px black)
-        drop-shadow(-1px -1px 1px black)
-        drop-shadow(1px -1px 1px black)
-        drop-shadow(-1px 1px 1px black);
+    border-radius: 1rem;
+    border: 2px solid rgb(51, 41, 10);
 }
 
 button {
@@ -68,14 +63,14 @@ button {
     width: 175px;
     padding: 0.5rem;
     color: inherit;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     background-color: #021f1d;
     background-repeat: no-repeat;
     cursor: pointer;
     overflow: hidden;
     outline: none;
     align-items: center;
-
+    border: 2px solid rgb(51, 41, 10);
 }
 
 .button-text {
@@ -88,6 +83,11 @@ button {
         );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    filter:
+    drop-shadow(1px 1px 0 rgb(22, 18, 4))
+    drop-shadow(-1px -1px 0 rgb(22, 18, 4))
+    drop-shadow(1px -1px 0 rgb(22, 18, 4))
+    drop-shadow(-1px 1px 0 rgb(22, 18, 4));
 }
 
 .landing-wrapper {
@@ -124,6 +124,11 @@ button {
     animation: textclip 2s linear infinite;
     display: inline-block;
     z-index: 4;
+    filter:
+    drop-shadow(1px 1px 0 rgb(51, 41, 10))
+    drop-shadow(-1px -1px 0 rgb(51, 41, 10))
+    drop-shadow(1px -1px 0 rgb(51, 41, 10))
+    drop-shadow(-1px 1px 0 rgb(51, 41, 10));
 }
 
 @keyframes textclip {
@@ -173,6 +178,7 @@ button {
     font-size: 3rem;
     text-align: center;
     padding-bottom: 5rem;
+    width: 100%;
 }
 
 .section-title::before {
@@ -262,6 +268,9 @@ li {
 .port-image {
     width: 90%;
     margin: auto;
+    box-shadow:
+    0 0 0 5px #021f1d,
+    0 0 0 10px #ffe283;
 }
 
 .link-div {
@@ -274,6 +283,11 @@ li {
     justify-content: space-evenly;
     border-top: 2px solid #021f1d;
     border-bottom:2px solid #021f1d;
+}
+
+
+#contact {
+    padding-bottom: 0;
 }
 
 #contact-description {
@@ -343,9 +357,11 @@ label {
     position: relative;
     left: 0;
     bottom: 0;
-    height: 5rem;
+    height: 2rem;
     width: 100%;
-    text-align: center;
+    margin-top: 2rem;
+    padding-right: 2rem;
+    text-align: right;
     color: #ffe283;
     background-color: #021f1d;
     border-top: 2px solid #ffe283;
@@ -355,15 +371,23 @@ label {
     .navbar {
         position: sticky;
         flex-direction: row;
-        justify-content: space-evenly;
         width: 100%;
-        height: 3.5rem;
-        padding: 0 2vw 0 2vw;
+        padding: 0.5rem;
         background-color: #021f1d;
+        border-bottom-width: 0.25rem;
+        border-bottom-style: solid;
+        border-image: linear-gradient(
+            -225deg,
+            white 0%,
+            #ecdfbf, 29%,
+            #97824b 67%,
+            #f1ebe5 100%
+            ) 1;
     }
 
     .button-wrap {
-        width: 5rem;
+        width: 5.5rem;
+        filter: none;
     }
 
     .nav-button {
@@ -411,9 +435,30 @@ label {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
+    .navbar {
+        justify-content: space-evenly;
+    }
+
     #contact-description {
         font-size: 0.9rem;
         padding-bottom: 5vh;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and ((min-width: 400px) and (orientation: portrait)) {
+    .navbar {
+        justify-content: flex-end;
+        padding: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .button-wrap {
+        width: 5rem;
     }
 }
