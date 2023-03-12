@@ -150,9 +150,11 @@ button {
 
 .light-wrapper {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     color: #021f1d;
+    background-color: #f3f2eb;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='24' viewBox='0 0 88 24'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='autumn' fill='%23ffffff' fill-opacity='0.58'%3E%3Cpath d='M10 0l30 15 2 1V2.18A10 10 0 0 0 41.76 0H39.7a8 8 0 0 1 .3 2.18v10.58L14.47 0H10zm31.76 24a10 10 0 0 0-5.29-6.76L4 1 2 0v13.82a10 10 0 0 0 5.53 8.94L10 24h4.47l-6.05-3.02A8 8 0 0 1 4 13.82V3.24l31.58 15.78A8 8 0 0 1 39.7 24h2.06zM78 24l2.47-1.24A10 10 0 0 0 86 13.82V0l-2 1-32.47 16.24A10 10 0 0 0 46.24 24h2.06a8 8 0 0 1 4.12-4.98L84 3.24v10.58a8 8 0 0 1-4.42 7.16L73.53 24H78zm0-24L48 15l-2 1V2.18A10 10 0 0 1 46.24 0h2.06a8 8 0 0 0-.3 2.18v10.58L73.53 0H78z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .light-wrapper h2 {
@@ -163,7 +165,8 @@ button {
     position: relative;
     min-height: 100vh;
     width: 100%;
-    background: radial-gradient(circle at top, #0A3F37, #031613)
+    background-color: #031613;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='24' viewBox='0 0 88 24'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='autumn' fill='%230a3c2f' fill-opacity='0.12'%3E%3Cpath d='M10 0l30 15 2 1V2.18A10 10 0 0 0 41.76 0H39.7a8 8 0 0 1 .3 2.18v10.58L14.47 0H10zm31.76 24a10 10 0 0 0-5.29-6.76L4 1 2 0v13.82a10 10 0 0 0 5.53 8.94L10 24h4.47l-6.05-3.02A8 8 0 0 1 4 13.82V3.24l31.58 15.78A8 8 0 0 1 39.7 24h2.06zM78 24l2.47-1.24A10 10 0 0 0 86 13.82V0l-2 1-32.47 16.24A10 10 0 0 0 46.24 24h2.06a8 8 0 0 1 4.12-4.98L84 3.24v10.58a8 8 0 0 1-4.42 7.16L73.53 24H78zm0-24L48 15l-2 1V2.18A10 10 0 0 1 46.24 0h2.06a8 8 0 0 0-.3 2.18v10.58L73.53 0H78z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .content-wrapper {
@@ -199,12 +202,15 @@ button {
     flex-direction: column;
     align-items: center;
     height: 75vh;
+    gap: 2.5rem;
 }
 
 .sub-section {
     display: flex;
     flex-direction: row;
-    gap: 5vw;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
     margin: auto;
 }
 
@@ -215,7 +221,6 @@ h3 {
 .about-sections {
     display: flex;
     flex-direction: column;
-    gap: 5vw;
     width: 75%;
 }
 
@@ -225,13 +230,12 @@ h3 {
 }
 
 #vine-left {
-    border-bottom:#ffe283 solid 3px;
-    border-right:#ffe283 solid 3px;
+    transform:rotate(90deg) scaleX(-1);
+
 }
 
 #vine-right {
-    border-top:#ffe283 solid 3px;
-    border-left:#ffe283 solid 3px;
+    transform:rotate(-90deg)
 }
 
 .skill-div {
@@ -298,7 +302,7 @@ li {
 }
 
 #contact-description {
-    width: 80%;
+    width: 70%;
     color: #021f1d;
     padding-bottom: 10vh;
 }
@@ -306,7 +310,7 @@ li {
 .contact-form {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 70%;
 }
 
 .form-box {
@@ -445,6 +449,22 @@ label {
 @media only screen and (max-width: 400px) {
     .navbar {
         justify-content: space-evenly;
+    }
+
+    .content-wrapper {
+        padding: 2rem 0 2rem;
+    }
+
+    .section-title {
+        padding-bottom: 3rem;
+    }
+
+    .sub-section {
+        flex-direction: column;
+    }
+
+    .about-sections {
+        width: 90%;
     }
 
     #contact-description {
