@@ -293,10 +293,6 @@ li {
     border-bottom:2px solid #021f1d;
 }
 
-#contact-wrapper {
-    height: calc(100vh - 2rem)
-}
-
 #contact {
     padding-bottom: 0;
 }
@@ -370,7 +366,6 @@ label {
     bottom: 0;
     height: 2rem;
     width: 100%;
-    margin-top: 2rem;
     padding-right: 2rem;
     text-align: right;
     color: #ffe283;
