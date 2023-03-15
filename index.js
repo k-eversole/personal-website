@@ -1,7 +1,7 @@
 
-const about = document.getElementById("about")
-const portfolio = document.getElementById("portfolio")
-const contact = document.getElementById("contact")
+const about = document.getElementById("about-anchor")
+const portfolio = document.getElementById("portfolio-anchor")
+const contact = document.getElementById("contact-anchor")
 
 document.getElementById("about-button").addEventListener("click", () => about.scrollIntoView() )
 document.getElementById("portfolio-button").addEventListener("click", () => portfolio.scrollIntoView() )
