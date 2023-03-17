@@ -43,7 +43,7 @@ body {
     gap: 1rem;
 }
 
-.button-wrap {
+button {
     display: flex;
     padding: .25rem;
     background: linear-gradient(
@@ -57,7 +57,7 @@ body {
     border: 2px solid rgb(51, 41, 10);
 }
 
-button {
+.button-wrap {
     font-size: 1.5rem;
     font-weight: bold;
     width: 175px;
@@ -73,8 +73,12 @@ button {
     border: 2px solid rgb(51, 41, 10);
 }
 
-button:hover {
+.button-wrap:hover {
     background-color:#1aa590;
+}
+
+button:active {
+    transform: scale(0.98);
 }
 
 .button-text {
@@ -398,12 +402,12 @@ label {
             ) 1;
     }
 
-    .button-wrap {
+    .nav-button {
         width: 5.5rem;
         filter: none;
     }
 
-    .nav-button {
+    .button-wrap {
         display: flex;
         justify-content: center;
         width: 5rem;
