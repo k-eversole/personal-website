@@ -24,11 +24,18 @@ body {
     background-color:#ffffff;
     color: #ecdfbf;
     overflow: scroll;
-
     --primary-dark: #021f1d;
     --primary-light: #0A3F37;
     --secondary: #d8c69a;
-    --gold-gradient: linear-gradient(
+    --accent: #30c7a6;
+    --dark-gold: linear-gradient(
+        #8a6b2d,
+        #FCF6BA,
+        #725619,
+        #FBF5B7,
+        #634410
+        );
+    --light-gold: linear-gradient(
         #BF953F,
         #FCF6BA,
         #B38728,
@@ -177,8 +184,7 @@ button:active {
     background-image: url("https://www.transparenttextures.com/patterns/transparent-square-tiles.png");
 }
 
-.light-wrapper h2 {
-
+.dark-wrapper .section-title {
 }
 
 .dark-wrapper {
@@ -201,13 +207,7 @@ button:active {
 }
 
 .section-title {
-    background-image: linear-gradient(
-        #BF953F,
-        #FCF6BA,
-        #B38728,
-        #FBF5B7,
-         #AA771C
-        );
+    background-image: var(--dark-gold);
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
@@ -508,7 +508,7 @@ label {
     }
 
     .section-title {
-        padding-bottom: 3rem;
+        padding-bottom: 2.5rem;
         font-size: 2rem;
     }
 
@@ -538,7 +538,7 @@ label {
 }
 
 @media only screen and (max-width: 300px) {
-    .button-wrap {
+    .nav-button {
         width: 5rem;
     }
 }
