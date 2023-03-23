@@ -33,21 +33,15 @@ body {
         #FCF6BA,
         #725619,
         #FBF5B7,
-        #634410
+        #9c6d1c
         );
     --light-gold: linear-gradient(
-        #BF953F,
+        #ac9669,
         #FCF6BA,
-        #B38728,
+        #ad9153,
         #FBF5B7,
-         #AA771C
+        #997d4e
         );
-/*
-    --primary-dark: #0FC1b3;
-    --primary-light: #0FC1b3;
-    --secondary: #474744;
-    --accent: #dd9933;
-    */
 }
 
 .container {
@@ -316,9 +310,10 @@ li {
 .port-image {
     width: 90%;
     margin: auto;
-    filter:
-    drop-shadow(0px 0px 10px black);
-
+    border: 1px solid black;
+    border-width: 0.5rem;
+    border-style: solid;
+    border-image: var(--light-gold) 1;
 }
 
 .link-div {
