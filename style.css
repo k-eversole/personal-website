@@ -302,7 +302,7 @@ li {
 }
 
 .item-name {
-    color: white;
+    color: #ffe395;
     margin-top: 2rem;
     text-align: center;
 }
@@ -310,7 +310,6 @@ li {
 .port-image {
     width: 90%;
     margin: auto;
-    border: 1px solid black;
     border-width: 0.5rem;
     border-style: solid;
     border-image: var(--light-gold) 1;
