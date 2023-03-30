@@ -287,28 +287,31 @@ li {
     padding-left: 1.5rem;
 }
 
-.portfolio-row {
+.portfolio-container {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
+    gap: 2.5rem;
 }
 
 .portfolio-item {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    width: 30rem;
+    width: 80%;
     padding: 2rem;
+    background-color: var(--primary-dark);
+    gap: 2rem;
 }
 
 .item-name {
     color: #ffe395;
-    margin-top: 2rem;
     text-align: center;
 }
 
 .port-image {
-    width: 90%;
+    width: 40%;
     margin: auto;
     border-width: 0.5rem;
     border-style: solid;
@@ -316,24 +319,26 @@ li {
 }
 
 .link-div {
-    padding: 0.25rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary);
+    background-color: var(--primary-light);
     border: 2px solid #021f1d;
     border-radius: 0.5rem;
+    height: 2.5rem;
+    width: 100%;
 }
 
 .link-div:hover {
     transform: scale(1.04);
 }
 
-
 .portfolio-links {
-    padding: 0.5rem 0;
-    margin-top: 0.5rem;
+    margin-top: 2rem;
     display: flex;
-    gap: 0.1rem;
+    gap: 1rem;
     justify-content: flex-end;
-    border-top: 2px solid #021f1d;
-    border-bottom:2px solid #021f1d;
 }
 
 #contact {
@@ -489,17 +494,13 @@ label {
         flex-direction: column;
     }
 
-    .portfolio-row {
-        flex-direction: column;
-        gap: 25px;
-    }
-
     .portfolio-item {
-        width: 100%;
+        flex-direction: column;
+        gap: 2rem;
     }
 
     .port-image {
-        max-width: 90%;
+        width: 90%;
         height: auto;
     }
 }
