@@ -10,3 +10,9 @@ document.getElementById("contact-button").addEventListener("click", () => contac
 document.getElementById("linked-in").addEventListener("click", () => window.open("https://www.linkedin.com/in/kris-eversole-82a26947/", '_blank'))
 document.getElementById("github").addEventListener("click", () => window.open("https://github.com/k-eversole", '_blank'))
 document.getElementById("twitter").addEventListener("click", () => window.open("https://twitter.com/KrisEversole", '_blank'))
+
+document.getElementById("demo-1").addEventListener("click", () => window.open("https://k-eversole.github.io/narcissist-translator", '_blank'))
+document.getElementById("github-1").addEventListener("click", () => window.open("https://github.com/k-eversole/narcissist-translator", '_blank'))
+document.getElementById("demo-2").addEventListener("click", () => window.open("https://replit.com/@keversole/trapped-with-byron-replit", '_blank'))
+document.getElementById("github-2").addEventListener("click", () => window.open("https://github.com/k-eversole/byron-game", '_blank'))
+
