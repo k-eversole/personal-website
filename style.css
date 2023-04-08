@@ -477,6 +477,10 @@ label {
         padding: 0.25rem 0.5rem 0.25rem 0.5rem;
     }
 
+    #submit-wrapper {
+        width: 10rem;
+    }
+
     .landing-text-wrapper {
         left: 0;
         font-size: 3.5vh;
