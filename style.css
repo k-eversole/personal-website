@@ -241,7 +241,7 @@ button:active {
 .sub-section {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: 80%;
     margin: auto;
@@ -258,22 +258,15 @@ h3 {
 }
 
 .vine-decoration {
-    width: auto;
-    height: 30vh;
-}
-
-#vine-left {
-    transform:rotate(90deg) scaleX(-1);
-
-}
-
-#vine-right {
-    transform:rotate(-90deg)
+    width: 15rem;
+    height: auto;
 }
 
 .skill-div {
     display: flex;
     justify-content: center;
+    margin: 0 2.5rem;
+    padding: 0.5rem;
 }
 
 ul {
@@ -511,6 +504,11 @@ label {
 
     .sub-section {
         flex-direction: column;
+    }
+
+    .skill-div {
+        margin: 2rem 0;
+        padding: 0.5rem;
     }
 
     .portfolio-item {
