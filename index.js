@@ -16,3 +16,23 @@ document.getElementById("github-1").addEventListener("click", () => window.open(
 document.getElementById("demo-2").addEventListener("click", () => window.open("https://replit.com/@keversole/trapped-with-byron-replit", '_blank'))
 document.getElementById("github-2").addEventListener("click", () => window.open("https://github.com/k-eversole/byron-game", '_blank'))
 
+
+// Cat popup
+
+const popup = document.querySelector(".popup");
+const trigger = document.querySelector(".cat-button");
+const closeButton = document.querySelector(".close-button");
+
+function togglePopup() {
+  popup.classList.toggle("show-popup");
+}
+
+function windowOnClick(event) {
+  if (event.target === popup) {
+      togglePopup();
+  }
+}
+
+trigger.addEventListener("click", togglePopup);
+closeButton.addEventListener("click", togglePopup);
+window.addEventListener("click", windowOnClick);
