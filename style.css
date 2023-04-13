@@ -508,8 +508,7 @@ label {
 .close-button {
     cursor: pointer;
     color: var(--primary-light);
-    padding-top: 3rem;
-    margin-bottom: 2rem;
+    padding-top: 1rem;
     font-size: 4rem;
 }
 
