@@ -262,7 +262,7 @@ h3 {
     height: auto;
 }
 
-.skill-div {
+.skill-text {
     display: flex;
     justify-content: center;
     margin: 0 2.5rem;
@@ -568,7 +568,6 @@ label {
         width: 90%;
     }
 
-
     #landing h2 {
         font-size: 2.5vh;
     }
@@ -594,7 +593,11 @@ label {
         flex-direction: column;
     }
 
-    .skill-div {
+    #about-skill {
+        margin-top: 2rem;
+    }
+
+    .skill-text {
         margin: 2rem 0;
         padding: 0.5rem;
     }
