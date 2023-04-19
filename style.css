@@ -455,25 +455,31 @@ label {
 
 .popup-contents {
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     background-color: var(--primary-dark);
     border: 1px solid black;
-    border-radius: 5rem;
+    border-radius: 1.5rem;
+}
+
+#mail-contents {
+    padding: 1rem 1.5rem;
+}
+
+#charlie-contents {
     width: 30rem;
     max-height: 90vh;
     max-width: 90vw;
-    border-radius: 1.5rem;
     padding: 1rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
 
-.popup-contents h1 {
+#charlie-contents h1 {
     font-size: 3rem;
     background-image: var(--light-gold);
     background-size: auto auto;
@@ -486,7 +492,7 @@ label {
     line-height: 1.2;
 }
 
-.popup-contents p {
+#charlie-contents p {
     padding: 1rem 0;
     width: 80%;
 }

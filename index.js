@@ -17,22 +17,35 @@ document.getElementById("demo-2").addEventListener("click", () => window.open("h
 document.getElementById("github-2").addEventListener("click", () => window.open("https://github.com/k-eversole/byron-game", '_blank'))
 
 
+// Contact popup
+const mailPopup = document.querySelector("#mail-popup");
+const mailTrigger = document.querySelector("#submit-wrapper");
+const mailCloseButton = document.querySelector("#mail-close");
+
+function toggleMailPopup() {
+  mailPopup.classList.toggle("show-popup");
+}
+
+mailTrigger.addEventListener("click", toggleMailPopup);
+mailCloseButton.addEventListener("click", toggleMailPopup);
+
 // Cat popup
 
-const popup = document.querySelector(".popup");
-const trigger = document.querySelector(".cat-button");
-const closeButton = document.querySelector(".close-button");
+const catPopup = document.querySelector("#charlie-popup");
+const catTrigger = document.querySelector(".cat-button");
+const catCloseButton = document.querySelector("#charlie-close");
 
-function togglePopup() {
-  popup.classList.toggle("show-popup");
+function toggleCatPopup() {
+  catPopup.classList.toggle("show-popup");
 }
+
+catTrigger.addEventListener("click", toggleCatPopup);
+catCloseButton.addEventListener("click", toggleCatPopup);
+
 
 function windowOnClick(event) {
-  if (event.target === popup) {
-      togglePopup();
-  }
+  (event.target === catPopup) ? toggleCatPopup() :
+    (event.target === mailPopup) ? toggleMailPopup() : "" //do nothing
 }
 
-trigger.addEventListener("click", togglePopup);
-closeButton.addEventListener("click", togglePopup);
 window.addEventListener("click", windowOnClick);

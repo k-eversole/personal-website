@@ -129,7 +129,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="submit" class="submit-button">
+                        <button type="button" class="submit-button">
                             <div class="button-wrap" id="submit-wrapper">
                                 <div class="button-text">Send</div>
                             </div>
@@ -140,13 +140,21 @@
         </div>
 
         <div class="footer"><div class="cat-button">©</div>2023 Kris Eversole</div>
-        <div class="popup">
-            <div class="popup-contents">
+
+        <div class="popup" id="mail-popup">
+            <div class="popup-contents" id="mail-contents">
+            <p>Thanks for the message! I'll get back to you shortly.</p>
+            <i class="fa-regular fa-circle-xmark close-button" id="mail-close"></i>
+            </div>
+        </div>
+
+        <div class="popup" id="charlie-popup">
+            <div class="popup-contents" id="charlie-contents">
                 <h1>You Found Charlie!</h1>
                 <p>(Hire me for more Charlie pics)</p>
                 <div id="charlie-div">
                 <img id="charlie-photo" src="images/charlie.jpg"></div>
-                <i class="fa-regular fa-circle-xmark close-button"></i>
+                <i class="fa-regular fa-circle-xmark close-button" id="charlie-close"></i>
                 </div>
             </div>
         </div>
