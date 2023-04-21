@@ -104,6 +104,7 @@ button:active {
         #dbc99f 67%,
         #f1ebe5 100%
         );
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     filter:
@@ -140,7 +141,6 @@ button:active {
     background-clip: border-box;
     background-size: 200% auto;
     background-clip: text;
-    text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
@@ -179,9 +179,6 @@ button:active {
     background-image: url("images/transparent-square-tiles.png");
 }
 
-.dark-wrapper .section-title {
-}
-
 .dark-wrapper {
     position: relative;
     min-height: 100vh;
@@ -206,7 +203,6 @@ button:active {
     background-clip: border-box;
     background-size: 200% auto;
     background-clip: text;
-    text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 3rem;
@@ -468,10 +464,6 @@ label {
     border-radius: 1.5rem;
 }
 
-#mail-contents {
-    padding: 1rem 1.5rem;
-}
-
 #charlie-contents {
     width: 30rem;
     max-height: 90vh;
@@ -486,7 +478,6 @@ label {
     background-clip: border-box;
     background-size: 200% auto;
     background-clip: text;
-    text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 1.2;

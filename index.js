@@ -16,21 +16,6 @@ document.getElementById("github-1").addEventListener("click", () => window.open(
 document.getElementById("demo-2").addEventListener("click", () => window.open("https://replit.com/@keversole/trapped-with-byron-replit", '_blank'))
 document.getElementById("github-2").addEventListener("click", () => window.open("https://github.com/k-eversole/byron-game", '_blank'))
 
-
-// Contact popup
-const mailPopup = document.querySelector("#mail-popup");
-const mailTrigger = document.querySelector("#submit-wrapper");
-const mailCloseButton = document.querySelector("#mail-close");
-
-function toggleMailPopup() {
-  mailPopup.classList.toggle("show-popup");
-}
-
-mailTrigger.addEventListener("click", toggleMailPopup);
-mailCloseButton.addEventListener("click", toggleMailPopup);
-
-// Cat popup
-
 const catPopup = document.querySelector("#charlie-popup");
 const catTrigger = document.querySelector(".cat-button");
 const catCloseButton = document.querySelector("#charlie-close");
@@ -39,13 +24,10 @@ function toggleCatPopup() {
   catPopup.classList.toggle("show-popup");
 }
 
-catTrigger.addEventListener("click", toggleCatPopup);
-catCloseButton.addEventListener("click", toggleCatPopup);
-
-
 function windowOnClick(event) {
-  (event.target === catPopup) ? toggleCatPopup() :
-    (event.target === mailPopup) ? toggleMailPopup() : "" //do nothing
+  (event.target === catPopup) ? toggleCatPopup() : "" //do nothing
 }
 
+catTrigger.addEventListener("click", toggleCatPopup);
+catCloseButton.addEventListener("click", toggleCatPopup);
 window.addEventListener("click", windowOnClick);

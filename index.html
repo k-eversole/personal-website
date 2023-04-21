@@ -110,7 +110,7 @@
                 <h2 class="section-title" id="contact-title">Contact Me</h2>
                 <div class="section-content">
                     <p id="contact-description">Want to hire me for a project, ask some questions about my experience, or just want to have your inbox overloaded with a hundred pictures of my cat? Send me a message and I'll get back to you as quickly as possible!</p>
-                    <form class="contact-form" action="/my-handlinpageg-form-" method="post">
+                    <form class="contact-form" action="https://mailthis.to/k-eversole" method="post">
                         <div class="form-box">
                             <div class="form-row">
                                 <div class="form-top-item">
@@ -129,7 +129,9 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="button" class="submit-button">
+                        <input type="hidden" name="_honeypot" value="">
+                        <input type="hidden" name="_confirmation" value="Thanks for the message! I'll get back to you shortly." value="">
+                        <button type="submit" class="submit-button">
                             <div class="button-wrap" id="submit-wrapper">
                                 <div class="button-text">Send</div>
                             </div>
@@ -140,13 +142,6 @@
         </div>
 
         <div class="footer"><div class="cat-button">©</div>2023 Kris Eversole</div>
-
-        <div class="popup" id="mail-popup">
-            <div class="popup-contents" id="mail-contents">
-            <p>Thanks for the message! I'll get back to you shortly.</p>
-            <i class="fa-regular fa-circle-xmark close-button" id="mail-close"></i>
-            </div>
-        </div>
 
         <div class="popup" id="charlie-popup">
             <div class="popup-contents" id="charlie-contents">
